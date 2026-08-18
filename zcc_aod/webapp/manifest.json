@@ -121,6 +121,48 @@
     "enableLiveFilter": true,
     "considerAnalyticalParameters": false,
     "cards": {
+      "card02": {
+         "model": "mainModel",
+          "template": "sap.ovp.cards.stack",
+          "settings": {
+              "title": "Available Employees",
+              "subTitle": "Today",
+              "itemText": "Category",
+              "entitySet": "DriverAvailability",
+              "objectStreamCardsSettings": {
+                  "annotationPath": "com.sap.vocabularies.UI.v1.Facets#Stack"
+              }
+          }
+      },
+      "card04": {
+          "model": "mainModel",
+          "template": "sap.ovp.cards.table",
+          "settings": {
+              "title": "Monthly Cost Breakdown",
+              "subTitle": "Salaries, Incidents & Fuel",
+              "entitySet": "MonthlyCosts",
+              "listFlavor": "standard",
+              "defaultSpan": {
+                "rows": 4,
+                "cols": 4
+              },
+              "annotationPath": "com.sap.vocabularies.UI.v1.LineItem"
+          }
+      },
+      "card03": {
+          "model": "mainModel",
+          "template": "sap.ovp.cards.charts.analytical",
+          "settings": {
+              "title": "Fleet Status",
+              "subTitle": "Total Vehicles by Type and Status",
+              "entitySet": "FleetStatus", 
+              "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#FleetStatusChart",
+              "defaultSpan": {
+                "rows": 5,
+                "cols": 2
+              }
+          }
+      },
       "card01": {
                 "model": "mainModel",
                 "template": "sap.ovp.cards.charts.analytical",
@@ -128,9 +170,29 @@
                     "title": "Current Month Incidents",
                     "subTitle": "Grouped by status",
                     "entitySet": "IncidentSummary",
-                    "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#IncidentChart"
+                    "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#IncidentChart",
+                    "defaultSpan": {
+                      "rows": 5,
+                      "cols": 2
+                  }
                 }
-            }
+            },
+      
+      "card005": {
+          "model": "mainModel",
+          "template": "sap.ovp.cards.list",
+          "settings": {
+              "title": "Avg Consumption per Fuel Type",
+              "subTitle": "Current Month",
+              "entitySet": "FuelAverage",
+              "listFlavor": "standard",
+              "defaultSpan": {
+                "rows": 5,
+                "cols": 2
+              },
+              "annotationPath": "com.sap.vocabularies.UI.v1.LineItem"
+          }
+      }    
     }
   },
   "sap.fiori": {
