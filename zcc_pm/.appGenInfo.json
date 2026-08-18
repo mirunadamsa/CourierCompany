@@ -1,0 +1,32 @@
+{
+  "generationParameters": {
+    "generationDate": "Tue Aug 18 2026 09:55:54 GMT+0300 (Eastern European Summer Time)",
+    "generatorPlatform": "Visual Studio Code",
+    "serviceType": "SAP System (ABAP On-Premise)",
+    "metadataFilename": "",
+    "serviceUrl": "https://sandbox-yxz71f4evbj.rise.cloud.sap:44301/sap/opu/odata/sap/ZCC_PM_UI_DRIVERTP_V2",
+    "appName": "zcc_pm",
+    "appTitle": "People Management App",
+    "appDescription": "People Management App",
+    "appNamespace": "",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.136.18",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.30.0",
+    "template": "List Report Page V2",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "Driver"
+      },
+      {
+        "type": "Navigation Entity",
+        "value": "None"
+      }
+    ],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}
