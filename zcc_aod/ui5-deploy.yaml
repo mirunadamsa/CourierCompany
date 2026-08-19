@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "4.0"
+metadata:
+  name: zccaod
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        ignoreCertErrors: true
+        target:
+          url: https://sandbox-yxz71f4evbj.rise.cloud.sap:44301/
+        app:
+          name: ZCC_AOD
+          description: Admin Overview Dashboard
+          package: ZCC_ADMIN
+          transport: S4HK903448
+        exclude:
+          - /test/
+          - /localService/
