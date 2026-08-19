@@ -192,6 +192,21 @@
               },
               "annotationPath": "com.sap.vocabularies.UI.v1.LineItem"
           }
+      },
+
+      "card006": {
+         "model": "mainModel",
+         "template": "sap.ovp.cards.list",
+          "settings": {
+            "title": "Quick links to the other apps",
+            "entitySet": "QuickLink",
+            "listFlavor": "standard",
+            "defaultSpan": {
+              "rows": 5,
+              "cols": 2
+            },
+            "annotationPath": "com.sap.vocabularies.UI.v1.LineItem"
+        }
       }    
     }
   },
