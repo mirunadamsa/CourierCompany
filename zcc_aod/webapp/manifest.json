@@ -196,16 +196,58 @@
 
       "card006": {
          "model": "mainModel",
-         "template": "sap.ovp.cards.list",
+         "template": "sap.ovp.cards.linklist",
           "settings": {
             "title": "Quick links to the other apps",
-            "entitySet": "QuickLink",
             "listFlavor": "standard",
             "defaultSpan": {
               "rows": 5,
               "cols": 2
             },
-            "annotationPath": "com.sap.vocabularies.UI.v1.LineItem"
+            "staticContent": [
+            {
+              "title": "Package Management",
+              "semanticObject": "Package",
+              "imageAltText": "Package Management",
+              "imageUri": "sap-icon://product",
+              "action": "display",
+              "openInNewWindow": true
+            },
+            {
+              "title": "Route Management",
+              "semanticObject": "Route",
+              "imageAltText": "Route Management",
+              "imageUri": "sap-icon://walk-me",
+              "action": "display",
+              "openInNewWindow": true
+
+            },
+            {
+              "title": "Incident System",
+              "semanticObject": "Incident",
+              "imageAltText": "Incident System",
+              "imageUri": "sap-icon://vehicle-repair",
+              "action": "display",
+              "openInNewWindow": true
+            },
+            {
+              "title": "Driver Management",
+              "semanticObject": "People",
+              "imageAltText": "Driver Management",
+              "imageUri": "sap-icon://account",
+              "action": "display",
+              "openInNewWindow": true
+
+            },
+            {
+              "title": "Vehicle Management",
+              "semanticObject": "Fleet",
+              "imageAltText": "Vehicle Management",
+              "imageUri": "sap-icon://car-rental",
+              "action": "display",
+              "openInNewWindow": true
+            }
+            ]
         }
       }    
     }
