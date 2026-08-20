@@ -182,7 +182,7 @@
           "model": "mainModel",
           "template": "sap.ovp.cards.list",
           "settings": {
-              "title": "Avg Consumption per Fuel Type",
+              "title": "Average Consumption per Fuel Type",
               "subTitle": "Current Month",
               "entitySet": "FuelAverage",
               "listFlavor": "standard",
